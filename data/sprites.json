@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "nombre": "Water Sprite",
+    "rareza": "Rare",
+    "poder": "Recarga escudos para vos y tus compañeros mientras estás en el agua.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil", "Quack"],
+    "precio": 800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fwater_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "nombre": "Earth Sprite",
+    "rareza": "Rare",
+    "poder": "Puede revelar ítems más raros al abrir cofres.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Cubo", "Quack"],
+    "precio": 800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fearth_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 12
+  },
+  {
+    "id": 3,
+    "nombre": "Fire Sprite",
+    "rareza": "Rare",
+    "poder": "Libera una explosión de fuego tras infligir suficiente daño.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil", "Cubo", "Quack"],
+    "precio": 800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Ffire_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 18
+  },
+  {
+    "id": 4,
+    "nombre": "Air Sprite",
+    "rareza": "Rare",
+    "poder": "Aumenta la velocidad de sprint y la altura de salto mientras está equipado.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil"],
+    "precio": 800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fair_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 10
+  },
+  {
+    "id": 5,
+    "nombre": "Duck Sprite",
+    "rareza": "Epic",
+    "poder": "Hacer emotes y escuchar música recarga tus escudos.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico"],
+    "precio": 1500,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fduck_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 8
+  },
+  {
+    "id": 6,
+    "nombre": "Ghost Sprite",
+    "rareza": "Epic",
+    "poder": "Te vuelve invisible brevemente al recargar.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil"],
+    "precio": 1500,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fghost_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 6
+  },
+  {
+    "id": 7,
+    "nombre": "Demon Sprite",
+    "rareza": "Epic",
+    "poder": "Roba vida y escudos tras cada eliminación.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico"],
+    "precio": 1500,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fdemon_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 7
+  },
+  {
+    "id": 8,
+    "nombre": "King Sprite",
+    "rareza": "Epic",
+    "poder": "Tu pico causa más daño mientras está equipado.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil"],
+    "precio": 1500,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fking_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 9
+  },
+  {
+    "id": 9,
+    "nombre": "Dream Sprite",
+    "rareza": "Legendary",
+    "poder": "Otorga un ítem aleatorio por nivel; al nivel máximo entrega loot legendario.",
+    "ubicacion": "Cofres raros y loot de Sprites especiales.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Cubo"],
+    "precio": 2800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fdream_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 4
+  },
+  {
+    "id": 10,
+    "nombre": "Boss Sprite",
+    "rareza": "Legendary",
+    "poder": "Aumenta tu vida y escudo máximos.",
+    "ubicacion": "Recompensas de jefes y loot de Sprites especiales.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Cubo"],
+    "precio": 2800,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fboss_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 5
+  },
+  {
+    "id": 11,
+    "nombre": "Grim Reaper Sprite",
+    "rareza": "Mythic",
+    "poder": "Marca a los jugadores que te disparan y revela su ubicación.",
+    "ubicacion": "Sprite Chests y contenedores de loot comunes.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Cubo", "Holofoil"],
+    "precio": 5000,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fgrimreaper_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 2
+  },
+  {
+    "id": 12,
+    "nombre": "Zero Point Sprite",
+    "rareza": "Mythic",
+    "poder": "Crea una mini Burbuja de Escudo al curarse.",
+    "ubicacion": "Cofres de bóveda, cofres con llave y Sprite Chests especiales.",
+    "variantes": ["Normal", "Dorado", "Gomita", "Galáctico", "Holofoil", "Cubo", "Quack"],
+    "precio": 5000,
+    "imagen": "https://fortnitespritetracker.org/_next/image/?url=%2Fimages%2Fsprites%2Fzeropoint_basic.webp&w=384&q=75&dpl=dpl_Cpe5foEm2WS6FsRTRFMprKcNnCbU",
+    "stock": 3
+  }
+]
