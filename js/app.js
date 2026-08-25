@@ -1,8 +1,3 @@
-/* ==========================================
-   SPRITE SHOP — Lógica principal
-   Flujo: Tienda → Carrito → Checkout → Confirmación
-   ========================================== */
-
 // ---- Estado global de la aplicación ----
 const estado = {
   sprites: [],       // catálogo completo cargado desde sprites.json
@@ -13,10 +8,10 @@ const estado = {
 
 // ---- Colores de rareza para el drop-shadow de las imágenes ----
 const COLORES_RAREZA = {
-  Rare:      "#4dabf7",
-  Epic:      "#b197fc",
+  Rare: "#4dabf7",
+  Epic: "#b197fc",
   Legendary: "#ffa94d",
-  Mythic:    "#ff6b9d",
+  Mythic: "#ff6b9d",
 };
 
 /* ==========================================
@@ -55,7 +50,7 @@ async function inicializar() {
  * luego dibuja las tarjetas en el DOM.
  */
 function renderizarCatalogo() {
-  const catalogo    = document.getElementById("catalogo");
+  const catalogo = document.getElementById("catalogo");
   const estadoVacio = document.getElementById("estadoVacio");
 
   // Aplicar filtros con métodos funcionales de arrays
@@ -87,11 +82,11 @@ function renderizarCatalogo() {
  * @returns {string} HTML de la tarjeta
  */
 function crearTarjetaHTML(sprite) {
-  const rarezaClass  = `rareza-${sprite.rareza.toLowerCase()}`;
-  const bandaClass   = `banda-${sprite.rareza.toLowerCase()}`;
-  const colorSombra  = COLORES_RAREZA[sprite.rareza] || "#fff";
-  const stockBajo    = sprite.stock <= 3;
-  const sinStock     = sprite.stock === 0;
+  const rarezaClass = `rareza-${sprite.rareza.toLowerCase()}`;
+  const bandaClass = `banda-${sprite.rareza.toLowerCase()}`;
+  const colorSombra = COLORES_RAREZA[sprite.rareza] || "#fff";
+  const stockBajo = sprite.stock <= 3;
+  const sinStock = sprite.stock === 0;
 
   return `
     <article class="sprite-card">
@@ -191,7 +186,7 @@ function cambiarCantidad(id, delta) {
   const index = estado.carrito.findIndex(item => item.sprite.id === id);
   if (index === -1) return;
 
-  const item   = estado.carrito[index];
+  const item = estado.carrito[index];
   const sprite = estado.sprites.find(s => s.id === id);
 
   // Verificar límite de stock al incrementar
@@ -268,11 +263,11 @@ function calcularCantidadItems() {
  * Re-dibuja toda la UI del carrito (lista, total, badge del header).
  */
 function actualizarCarritoUI() {
-  const lista        = document.getElementById("carritoLista");
-  const vacio        = document.getElementById("carritoVacio");
-  const footer       = document.getElementById("carritoFooter");
-  const totalEl      = document.getElementById("carritoTotal");
-  const badge        = document.getElementById("cartBadge");
+  const lista = document.getElementById("carritoLista");
+  const vacio = document.getElementById("carritoVacio");
+  const footer = document.getElementById("carritoFooter");
+  const totalEl = document.getElementById("carritoTotal");
+  const badge = document.getElementById("cartBadge");
 
   badge.textContent = calcularCantidadItems();
 
@@ -359,8 +354,8 @@ function cerrarCarrito() {
 
 /** Renderiza el resumen del pedido en la pantalla de checkout */
 function renderizarResumenCheckout() {
-  const lista    = document.getElementById("resumenLista");
-  const totalEl  = document.getElementById("resumenTotal");
+  const lista = document.getElementById("resumenLista");
+  const totalEl = document.getElementById("resumenTotal");
 
   lista.innerHTML = estado.carrito
     .map(({ sprite, cantidad }) => `
@@ -445,7 +440,7 @@ async function procesarCompra() {
   if (!validarFormulario()) return;
 
   const nombre = document.getElementById("inputNombre").value.trim();
-  const email  = document.getElementById("inputEmail").value.trim();
+  const email = document.getElementById("inputEmail").value.trim();
 
   // Simulación de procesamiento con SweetAlert2
   await Swal.fire({
@@ -464,10 +459,10 @@ async function procesarCompra() {
   const numeroOrden = `FN-${Date.now().toString(36).toUpperCase()}`;
 
   // Renderizar vista de confirmación
-  document.getElementById("numeroOrden").textContent  = numeroOrden;
+  document.getElementById("numeroOrden").textContent = numeroOrden;
   document.getElementById("confirmNombre").textContent = nombre;
-  document.getElementById("confirmEmail").textContent  = email;
-  document.getElementById("confirmTotal").innerHTML   = `⚡ ${calcularTotal().toLocaleString()} V-Bucks`;
+  document.getElementById("confirmEmail").textContent = email;
+  document.getElementById("confirmTotal").innerHTML = `⚡ ${calcularTotal().toLocaleString()} V-Bucks`;
 
   const confirmItems = document.getElementById("confirmItems");
   confirmItems.innerHTML = estado.carrito
@@ -493,8 +488,8 @@ async function procesarCompra() {
  * Reinicia la aplicación: vacía el carrito y vuelve a la tienda.
  */
 function reiniciarApp() {
-  estado.carrito        = [];
-  estado.filtroRareza   = "Todos";
+  estado.carrito = [];
+  estado.filtroRareza = "Todos";
   estado.filtroBusqueda = "";
 
   document.getElementById("inputBusqueda").value = "";
@@ -505,7 +500,7 @@ function reiniciarApp() {
   });
 
   // Limpiar formulario de checkout
-  ["inputNombre","inputEmail","inputDireccion","inputTarjeta"].forEach(id => {
+  ["inputNombre", "inputEmail", "inputDireccion", "inputTarjeta"].forEach(id => {
     document.getElementById(id).value = "";
   });
 
@@ -565,7 +560,7 @@ function registrarEventos() {
 
   // --- Limpiar filtros desde estado vacío ---
   document.getElementById("btnLimpiarFiltros").addEventListener("click", () => {
-    estado.filtroRareza   = "Todos";
+    estado.filtroRareza = "Todos";
     estado.filtroBusqueda = "";
     document.getElementById("inputBusqueda").value = "";
     document.querySelectorAll(".filtro-btn").forEach(btn => {
@@ -585,11 +580,11 @@ function registrarEventos() {
     const btn = e.target.closest("[data-accion]");
     if (!btn) return;
 
-    const id     = Number(btn.dataset.id);
+    const id = Number(btn.dataset.id);
     const accion = btn.dataset.accion;
 
-    if (accion === "sumar")    cambiarCantidad(id, +1);
-    if (accion === "restar")   cambiarCantidad(id, -1);
+    if (accion === "sumar") cambiarCantidad(id, +1);
+    if (accion === "restar") cambiarCantidad(id, -1);
     if (accion === "eliminar") eliminarDelCarrito(id);
   });
 
@@ -601,10 +596,10 @@ function registrarEventos() {
   });
 
   // --- Limpiar error visual al corregir un campo ---
-  ["inputNombre","inputEmail","inputDireccion","inputTarjeta"].forEach(id => {
+  ["inputNombre", "inputEmail", "inputDireccion", "inputTarjeta"].forEach(id => {
     document.getElementById(id).addEventListener("input", e => {
       e.target.classList.remove("invalido");
-      const errorId = "error" + id.replace("input","");
+      const errorId = "error" + id.replace("input", "");
       document.getElementById(errorId).textContent = "";
     });
   });
@@ -614,3 +609,7 @@ function registrarEventos() {
    ARRANQUE
    ========================================== */
 document.addEventListener("DOMContentLoaded", inicializar);
+
+// --- Mostrar año actual en el footer ---
+const anio = document.getElementById("anio");
+anio.textContent = new Date().getFullYear();
